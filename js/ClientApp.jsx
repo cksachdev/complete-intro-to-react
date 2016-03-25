@@ -7,10 +7,10 @@ const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 
 const App = () => (
   <Router history={hashHistory}>
-  <Route path='/' component={Layout} >
-  <IndexRoute component={Landing}/>
-  <Route path='/search' component={Search} />
-  </Route>
+    <Route path='/' component={Layout} >
+      <IndexRoute component={Landing}/>
+      <Route path='/search' component={Search} />
+    </Route>
   </Router>
   )
 
